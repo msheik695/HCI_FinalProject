@@ -17,7 +17,7 @@
 .main-nav .logo{
     margin-left: 25px;
     font-weight:bolder;
-    color:#fff
+    color:#fff;
 }
 .logo a{
     text-decoration: none;
@@ -41,7 +41,7 @@
     font-size: 0.8em;
 }
 .left-nav li, .left-nav a,.right-nav li, .right-nav a{
-    font-size: 0.8m;
+    font-size: 0.9m;
     text-transform: uppercase;
     margin: 0 15px;
     text-decoration:none;
