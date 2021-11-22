@@ -125,29 +125,49 @@ input:focus{
 }
 
 /* product section */
+
 .product-sec{
     background-color:#FFFDE4;
     margin-top:3em;
     border: 1px solid #0000008a;; 
 }
-
-.product-sec h2{
-    text-align:center;
-    padding-top: 1em;
+.deals .product-sec{
+    background-color:#FFFDE4;
+    margin-top:1em;
+    border: 1px solid #0000008a;; 
 }
+
+h2{
+    text-align:center;
+    padding-top: 0.5em;
+    font-size: xx-large;
+}
+.deals .box .sale{
+    position: absolute;
+    left: 170px;
+    margin-top:10px;
+    color:red;
+    font-size:1.3em;
+}
+.deals .product-sec .product-container{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    place-items:center;
+    gap:1.0rem;
+    padding: 1em 0;
+  }
 .product-sec .product-container{
   display: grid;
   grid-template-columns: repeat(5 ,1fr);
   place-items:center;
   gap:1.0rem;
   padding: 1em 0;
-  
 }
 .product-sec .product-container .box{
+ position: relative;
   text-align: center;
   background-color:white;
-  width: 230px;
-  height:300px;
+  padding: 0.5em 1.2em;
   border: 1px solid #0000008a;
 }
 
@@ -164,7 +184,11 @@ input:focus{
   color:#333;
   padding:.5rem 0;
 }
-
+.product-sec .product-container .price span{
+    text-decoration: line-through;
+    font-size:1.2em;
+    margin-left: 5px;
+}
 .product-sec .product-container .box .quantity{
   display: flex;
   align-items: center;
@@ -184,7 +208,7 @@ input:focus{
 
 .product-sec .product-container .box .btn{
     display: inline-block;
-    padding:.2rem 1.5rem;
+    padding:.2rem 2.5rem;
     font-size: 1.2rem;
     text-align: center;
     cursor: pointer;
@@ -192,6 +216,7 @@ input:focus{
     text-decoration:none;
     background:#041641;
     color:#fff;
+    text-transform: capitalize;
 } 
 /* Footer style */
 .footer-sec{
