@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="js/lib/jquery-ui-1.13.0.custom/jquery-ui.min.css">
+    <script type="text/javascript" src="js/lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui-1.13.0.custom/jquery-ui.min.js"></script>
+    <script src="js/custom.js"></script>
     <link rel="stylesheet" href="css/custom.css">
     <title>JAMO | HOME</title>
 </head>
@@ -18,12 +21,18 @@
                 </a>
             </div>
             <ul class="left-nav">
-                <li><a href="#">Categories</a>
+                <li ><a href="#">Categories</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
                 </li>
                 <li><a href="deals.html">Deals</a></li>
             </ul>
             <div class="search">
-            <input type="text" class="search_input" placeholder="Search" />
+            <input type="text" id="grocery_search" class="search_input" placeholder="Search" />
             <i class="fas fa-search search__icon"></i>
             </div>
             <div class="right-nav">
@@ -189,6 +198,5 @@
         </div>
     </footer>
    
-   <script src="js/custom.js"></script>
 </body>
 </html>

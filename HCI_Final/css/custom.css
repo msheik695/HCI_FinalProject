@@ -41,7 +41,7 @@
     font-size: 0.8em;
 }
 .left-nav li, .left-nav a,.right-nav li, .right-nav a{
-    font-size: 0.9m;
+    font-size: 0.9em;
     text-transform: uppercase;
     margin: 0 15px;
     text-decoration:none;
@@ -78,6 +78,15 @@
 input:focus{
     outline: none;
 }
+.ui-widget-content{
+    background: #041641;
+    color: #fff;
+    padding: 10px;
+}
+.ui-menu-item-wrapper:hover{
+    background: none;
+    border: none;
+}
 
 .right-nav .login{
     border:1px solid;
@@ -92,6 +101,27 @@ input:focus{
 .cart{
     color:#fff;
 }
+
+/* Dropdown style */
+
+.left-nav .dropdown{
+    position:absolute;
+    top:15px;
+    left:150px;
+    text-align:center;
+    background-color: #041641;
+    display:none;
+    min-width: 5rem;
+    margin-top: 2.5rem;
+}
+.left-nav .dropdown li{
+    padding:0 0 5px 0;
+}
+.left-nav li:hover > .dropdown  {
+    display:block;
+    text-align:center;
+}
+
 
 /* Banner section */
 .banner-sale{
@@ -151,7 +181,7 @@ h2{
 }
 .deals .product-sec .product-container{
     display: grid;
-    grid-template-columns: repeat(4 ,1fr);
+    grid-template-columns: repeat(5 ,1fr);
     place-items:center;
     gap:1.0rem;
     padding: 1em 0;
@@ -164,7 +194,7 @@ h2{
   padding: 1em 0;
 }
 .product-sec .product-container .box{
- position: relative;
+  position: relative;
   text-align: center;
   background-color:white;
   padding: 0.5em 1.2em;
@@ -186,7 +216,7 @@ h2{
 }
 .product-sec .product-container .price span{
     text-decoration: line-through;
-    font-size:1.2em;
+    font-size:0.8em;
     margin-left: 5px;
 }
 .product-sec .product-container .box .quantity{
