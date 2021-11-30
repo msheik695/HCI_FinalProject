@@ -20,8 +20,8 @@
                     JA<span>MO</span>
                 </a>
             </div>
-            <ul class="left-nav">
-                <li ><a href="#">Categories</a>
+            <ul class="left-nav" id="left">
+                <li class="categories"><a href="#">Categories</a>
                     <ul class="dropdown">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Home</a></li>
@@ -35,11 +35,15 @@
             <input type="text" id="grocery_search" class="search_input" placeholder="Search" />
             <i class="fas fa-search search__icon"></i>
             </div>
-            <div class="right-nav">
+            <div class="right-nav" id="right">
                 <a href="login.html" class="login">Log in</a>
                 <a href="signup.html" class="signup">Sign up</a>
                 <a href="#"><i class="fas fa-shopping-cart fa-lg cart"></i></a>
             </div>
+            <!-- Hamburger menu -->
+            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
     </nav>
     <section>
     <div class="banner-sale">
@@ -175,7 +179,7 @@
         <div class="company-info">
             <ul class="company-contact">
                 <li>Contact Us</li>
-                <li>+1 (801) 143 1456</li>
+                <li>+1 (801)-143-1456</li>
                 <li>jamo@gmail.com</li>
             </ul>
             <ul class="company-services">

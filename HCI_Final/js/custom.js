@@ -18,3 +18,12 @@ $(document).ready(function(){
 
 });
 
+function myFunction() {
+    var x = document.getElementById("left");
+    if (x.className === "left-nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "left-nav";
+    }
+}
+
