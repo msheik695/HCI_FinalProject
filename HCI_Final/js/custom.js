@@ -1,3 +1,8 @@
+function myFunction() {
+    alert("Thanks for shopping with us! Your item has been added to the cart");
+}
+
+
 function loadGroceries(){
     $.ajax({
         url: "data/groceryProducts.json",
@@ -18,12 +23,4 @@ $(document).ready(function(){
 
 });
 
-function myFunction() {
-    var x = document.getElementById("left");
-    if (x.className === "left-nav") {
-      x.className += " responsive";
-    } else {
-      x.className = "left-nav";
-    }
-}
 
