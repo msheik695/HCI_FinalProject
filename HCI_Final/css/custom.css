@@ -579,10 +579,10 @@ h2{
     .deals .box .sale{
         position: absolute;
         top: 0;
-        left: 128px;
+        left: 130px;
         margin-top:10px;
         color:red;
-        font-size:1.1em;
+        font-size:0.9em;
     }
     .product-sec .product-container{
       display: grid;
@@ -600,10 +600,6 @@ h2{
       border: 1px solid #0000008a;
     }
     
-    .product-sec .product-container .box:last-child,.product-sec .product-container .box:nth-last-child(2){
-        display: none;
-    }
-
     .product-sec .product-container .box img{
       height: 5em;
       width:5em;
@@ -742,10 +738,10 @@ h2{
     .deals .box .sale{
         position: absolute;
         top: 0;
-        left: 128px;
+        left: 130px;
         margin-top:10px;
         color:red;
-        font-size:1.1em;
+        font-size:1em;
     }
     .product-sec .product-container{
       display: grid;
@@ -911,6 +907,14 @@ and (min-width: 1100px) {
     banner-sale{
         display:flex;
         
+    }
+    .deals .box .sale{
+        position: absolute;
+        top: 0;
+        left: 140px;
+        margin-top:10px;
+        color:red;
+        font-size:1em;
     }
     .sale-img{
       background-image:url('../images/banner.jpeg') ;
