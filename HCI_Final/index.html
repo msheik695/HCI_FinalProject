@@ -9,18 +9,30 @@
     <script type="text/javascript" src="js/lib/jquery-ui-1.13.0.custom/jquery-ui.min.js"></script>
     <script src="js/custom.js"></script>
     <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Google Font Connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/b8de8e9c29.js" crossorigin="anonymous"></script>
     <title>JAMO | HOME</title>
 </head>
 <body>
 
-    <nav class="main-nav">
+    <nav class="main-nav" id="main-nav">
             <div class="logo">
                 <a href="#">
                     JA<span>MO</span>
                 </a>
             </div>
-            <ul class="left-nav" id="left">
+            <ul class="left-nav" >
                 <li class="categories"><a href="#">Categories</a>
                     <ul class="dropdown">
                         <li><a href="#">Vegetables</a></li>
@@ -32,16 +44,16 @@
                 <li><a href="deals.html">Deals</a></li>
             </ul>
             <div class="search">
-            <input type="text" id="grocery_search" class="search_input" placeholder="Search" />
-            <i class="fas fa-search search__icon"></i>
+                <input type="text" id="grocery_search" class="search_input" placeholder="Search" />
+                <i class="fas fa-search search__icon"></i>
             </div>
-            <div class="right-nav" id="right">
+            <div class="right-nav">
                 <a href="login.html" class="login">Log in</a>
                 <a href="signup.html" class="signup">Sign up</a>
                 <a href="#"><i class="fas fa-shopping-cart fa-lg cart"></i></a>
             </div>
             <!-- Hamburger menu -->
-            <a href="javascript:void(0);" class="hamburger">
+            <a href="" class="hamburger">
                 <i class="fas fa-bars"></i>
             </a>
     </nav>
@@ -57,7 +69,7 @@
     <section class="product-sec">
         <h2>Featured products</h2>
         <div class="product-container">
-            <div class="box">
+            <div class="box end">
                 <img src="images/Produce/lettuce.png" alt="">
                 <h3>Lettuce</h3>
                 <div class="price"> $10.50</div>
@@ -69,7 +81,7 @@
                 <a href="#" onclick="myFunction()" class="btn">add to cart</a>
             </div>
             <div class="box">
-                <img src="images/product-2.png" alt="">
+                <img src="images/Dairy/orangeJuice.png" alt="">
                 <h3>Onions</h3>
                 <div class="price"> $10.50</div>
                 <div class="quantity">
@@ -80,7 +92,7 @@
                 <a href="#" onclick="myFunction()" class="btn">add to cart</a>
             </div>
             <div class="box">
-                <img src="images/product-3.png" alt="">
+                <img src="images/Produce/cherries.png"" alt="">
                 <h3>Meat</h3>
                 <div class="price"> $10.50 </div>
                 <div class="quantity">
@@ -90,7 +102,7 @@
                 </div>
                 <a href="#" onclick="myFunction()" class="btn">add to cart</a>
             </div>
-            <div class="box">
+            <div class="box start">
                 <img src="images/Meat/steak.png" alt="">
                 <h3>Steak</h3>
                 <div class="price"> $10.50</div>
@@ -101,7 +113,7 @@
                 </div>
                 <a href="#" onclick="myFunction()" class="btn">add to cart</a>
             </div>
-                 <div class="box">
+                 <div class="box end">
                     <img src="images/Meat/turkey.png" alt="">
                 <h3>Turkey</h3>
                 <div class="price"> $10.50 </div>
@@ -126,7 +138,7 @@
             </div>
             <div class="box">
                 
-                <img src="images/product-5.png" alt="">
+                <img src="images/Produce/brussel-sprouts.png"" alt="">
                 <h3>Potatoes</h3>
                 <div class="price"> $10.50</div>
                 <div class="quantity">
@@ -136,9 +148,9 @@
                 </div>
                 <a href="#" onclick="myFunction()" class="btn">add to cart</a>
             </div>
-            <div class="box">
+            <div class="box start">
                 
-                <img src="images/product-6.png" alt="">
+                <img src="images/Produce/blueberries.png" alt="">
                 <h3>Avocado</h3>
                 <div class="price"> $10.50</div>
                 <div class="quantity">
@@ -148,9 +160,9 @@
                 </div>
                 <a href="#" onclick="myFunction()" class="btn">add to cart</a>
             </div>
-            <div class="box">
+            <div class="box end">
                 
-                <img src="images/product-7.png" alt="">
+                <img src="images/Produce/strawberries.png" alt="">
                 <h3>Carrots</h3>
                 <div class="price"> $10.50</div>
                 <div class="quantity">
@@ -160,9 +172,30 @@
                 </div>
                 <a href="#" onclick="myFunction()" class="btn">add to cart</a>
             </div>
-            <div class="box">
-                
-                <img src="images/product-8.png" alt="">
+            <div class="box"> 
+                <img src="images/Produce/carrot.png" alt="">
+                <h3>Lemon</h3>
+                <div class="price"> $10.50</div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span> /Ib </span>
+                </div>
+                <a href="#" onclick="myFunction()" class="btn">add to cart</a>
+            </div>
+            <div class="box "> 
+                <img src="images/Produce/carrot.png" alt="">
+                <h3>Lemon</h3>
+                <div class="price"> $10.50</div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span> /Ib </span>
+                </div>
+                <a href="#" onclick="myFunction()" class="btn">add to cart</a>
+            </div>
+            <div class="box start"> 
+                <img src="images/Produce/carrot.png" alt="">
                 <h3>Lemon</h3>
                 <div class="price"> $10.50</div>
                 <div class="quantity">
@@ -197,10 +230,13 @@
                     <input type="email" name="email" id="email" placeholder="Email Address">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </div>
-                
             </form>
         </div>
     </footer>
    
 </body>
 </html>
+
+
+
+
